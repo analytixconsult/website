@@ -1,0 +1,31 @@
+// Mendapatkan elemen slider
+const sliderTrack = document.querySelector('.slider-track');
+
+// Fungsi untuk menggeser slider ke kiri
+function moveToPrevSlide() {
+    const sliderItems = document.querySelectorAll('.service-item');
+    const lastSlide = sliderItems[sliderItems.length - 1];
+    sliderTrack.insertBefore(lastSlide, sliderItems[0]);
+    sliderTrack.style.transition = 'none'; // Menghilangkan transisi sementara
+    sliderTrack.style.transform = 'translateX(-100%)'; // Geser ke kiri langsung
+    setTimeout(() => {
+        sliderTrack.style.transition = 'transform 0.5s ease'; // Kembalikan transisi
+        sliderTrack.style.transform = 'translateX(0)';
+    }, 50); // Tunggu sejenak sebelum mengaktifkan transisi lagi
+}
+
+// Fungsi untuk menggeser slider ke kanan
+function moveToNextSlide() {
+    const sliderItems = document.querySelectorAll('.service-item');
+    const firstSlide = sliderItems[0];
+    sliderTrack.appendChild(firstSlide); // Pindahkan elemen pertama ke akhir
+    sliderTrack.style.transition = 'none'; // Menghilangkan transisi sementara
+    sliderTrack.style.transform = 'translateX(100%)'; // Geser ke kanan langsung
+    setTimeout(() => {
+        sliderTrack.style.transition = 'transform 0.5s ease'; // Kembalikan transisi
+        sliderTrack.style.transform = 'translateX(0)';
+    }, 50); // Tunggu sejenak sebelum mengaktifkan transisi lagi
+}
+
+// Fungsi untuk otomatis memindahkan slider setiap 3 detik
+setInterval(moveToNextSlide, 1000); // Geser setiap 3 detik

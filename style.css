@@ -1,0 +1,539 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+.header {
+    background: #222;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex; /* Atur elemen anak secara horizontal */
+    align-items: center; /* Pusatkan elemen secara vertikal */
+    justify-content: space-between; /* Logo di kiri, nav-links di kanan */
+    height: 50px; /* Sesuaikan tinggi navbar */
+    padding: 5px 10px; /* Ruang dalam navbar */
+}
+
+.navbar img {
+    margin-right: 20px; /* Atur jarak yang lebih proporsional antara logo dan nav-links */
+    width: auto;
+    height: 40px; /* Sesuaikan ukuran logo */
+}
+
+.nav-links {
+    margin-left: auto; /* Memindahkan elemen ke kanan ujung */
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: #00aaff;
+    border-radius: 5px;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #222;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+/* Styling for the logo and company name */
+.navbar img {
+    margin-right: -800px; /* Space between logo and text */
+}
+
+.company-name {
+    font-size: 50rem; /* Adjust size as needed */
+    font-weight: bold;
+    color: #fff;
+    line-height: 60px; /* Align vertically with the logo */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 190px 20px;
+    background-image: url('Background.webp'); /* Add your image file name here */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    text-decoration: none;
+    background: #00aaff;
+    color: #222;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #fff;
+}
+
+/* Process Section */
+.Process {
+    padding: 50px 20px;
+    background: #f7f9fc;
+    text-align: center;
+}
+
+.Process h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.Process-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.Process-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Process-item img {
+    width: 35%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.Process-item h3 {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.Process-item p {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.Process-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Success Statement Section */
+.success-statement {
+    padding: 50px 20px;
+    background: #fff; /* Soft light blue */
+    text-align: center;
+    margin-top: 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.success-statement h2 {
+    font-size: 2.5rem;
+    color: #00aaff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.success-statement p {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.success-statement p:nth-child(2) {
+    color: #00aaff; /* Highlight the second sentence */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#typing-text {
+    font-size: 1rem; /* Responsive font-size */
+    max-width: 90%; /* Ensures the text stays within the viewport */
+    word-wrap: break-word; /* Ensures long words wrap correctly */
+    margin: 0 auto; /* Centers the text */
+    padding: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 10px; /* Adjust padding for mobile */
+    }
+
+    .hero h1 {
+        font-size: 1.8rem; /* Reduce font size */
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 8px 15px; /* Smaller button for mobile */
+    }
+
+    #typing-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Slider Responsive */
+.slider-container {
+    overflow-x: auto; /* Add horizontal scrolling for small screens */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+}
+
+.slider-track {
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+.Project-item {
+    width: 90%; /* Reduce width for mobile */
+    margin: 0 auto; /* Center items */
+}
+
+/* Tambahkan untuk layar kecil */
+@media (max-width: 768px) {
+    #typing-text {
+        font-size: 1rem; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    #typing-text {
+        font-size: 0.9rem; /* Ukuran font lebih kecil lagi untuk perangkat mobile */
+    }
+}
+
+
+/* Project Section */
+.Project {
+    padding: 50px 20px;
+    background: #eef7fc00;
+    text-align: center;
+}
+
+.Project h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Slider Track - This will animate the slide */
+.slider-track {
+    display: flex;
+    animation: slideAnimation 12s infinite; /* Animation untuk slider */
+}
+
+.Project-item {
+    display: flex;
+    flex-direction: column; /* Ubah tata letak menjadi vertikal */
+    align-items: center; /* Pastikan konten di tengah */
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.Project-item:nth-child(even) {
+    background: #f8f9fc;
+}
+
+.Project-item:hover {
+    background: #e6f0ff;
+    transform: translateY(-2px);
+}
+
+.Project-item img {
+    width: auto;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.Project-content {
+    text-align: center; /* Pusatkan teks */
+}
+
+.Project-content h3 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.Project-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Animation untuk slider */
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Project-item {
+        flex-direction: column; /* Tata letak vertikal */
+        text-align: center; /* Teks tetap di tengah */
+    }
+
+    .Project-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 8px 15px;
+    }
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+/* Our Team Section */
+.team {
+    padding: 50px 20px;
+    background: #f7f9fc;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-item img {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.team-item h3 {
+    font-size: 1.25rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.team-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.team-item .role {
+    font-weight: bold;
+    color: #00aaff;
+}
+
+.team-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.linkedin-icon {
+    display: inline-block;
+    text-decoration: none;
+    color: #0077b5;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.linkedin-icon:hover {
+    color: #005582;
+}
+
+.linkedin-icon {
+    display: inline-block;
+    text-decoration: none;
+    color: #0077b5;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.linkedin-icon:hover {
+    color: #005582;
+}
+
+/* Typing Effect */
+#typing-text {
+    display: inline-block;
+    border-right: 2px solid #fff;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-members {
+        justify-content: center;
+        gap: 20px; /* Reduced gap for smaller screens */
+    }
+
+    .team-member {
+        width: 45%; /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-members {
+        gap: 15px; /* Reduced gap for mobile devices */
+    }
+
+    .team-member {
+        width: 100%; /* Stack team members in a single column on small screens */
+    }
+
+    .team-member img {
+        width: 200px; /* Adjust image size on mobile */
+        height: 200px;
+    }
+}
