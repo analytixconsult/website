@@ -533,7 +533,7 @@ body {
     }
 
     .team-member img {
-        width: 200px; /* Adjust image size on mobile */
-        height: 200px;
+        width: 150px; /* Adjust image size on mobile */
+        height: 150px;
     }
 }
