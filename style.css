@@ -436,7 +436,7 @@ body {
 .team-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
     flex-wrap: wrap;
 }
 
@@ -446,7 +446,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 250px;
+    width: 200px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
