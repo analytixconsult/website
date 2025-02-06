@@ -446,12 +446,12 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 200px;
+    width: 150px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team-item img {
-    width: 80%;
+    width: 60%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 15px;
