@@ -515,7 +515,7 @@ body {
 @media (max-width: 768px) {
     .team-members {
         justify-content: center;
-        gap: 15px; /* Reduced gap for smaller screens */
+        gap: 20px; /* Reduced gap for smaller screens */
     }
 
     .team-member {
@@ -533,7 +533,7 @@ body {
     }
 
     .team-member img {
-        width: 150px; /* Adjust image size on mobile */
-        height: 150px;
+        width: 200px; /* Adjust image size on mobile */
+        height: 200px;
     }
 }
