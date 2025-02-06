@@ -446,7 +446,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 2000px;
+    width: 175px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -529,7 +529,7 @@ body {
     }
 
     .team-member {
-        width: 70%; /* Stack team members in a single column on small screens */
+        width: 100%; /* Stack team members in a single column on small screens */
     }
 
     .team-member img {
