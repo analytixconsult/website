@@ -529,7 +529,7 @@ body {
     }
 
     .team-member {
-        width: 100%; /* Stack team members in a single column on small screens */
+        width: 70%; /* Stack team members in a single column on small screens */
     }
 
     .team-member img {
