@@ -287,8 +287,8 @@ body {
 /* Slider Track - This will animate the slide */
 .slider-track {
     display: flex;
-    animation: slideAnimation 12s 3; /* Animation untuk slider */
-}
+    animation: slideAnimation 12s infinite; /* Animation untuk slider */
+}    
 
 .Project-item {
     display: flex;
