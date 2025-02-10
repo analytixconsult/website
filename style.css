@@ -106,7 +106,7 @@ body {
     background-image: url('Background.webp'); /* Add your image file name here */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     color: #fff;
 }
 
