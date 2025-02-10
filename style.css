@@ -290,14 +290,6 @@ body {
     display: flex;
   }
 
-  .slider-item {
-    min-width: 100%;
-    scroll-snap-align: start;
-    background-color: lightblue;
-    padding: 40px;
-    text-align: center;
-  }
-
 .Project-item {
     min-width: 300px;
     scroll-snap-align: start;
