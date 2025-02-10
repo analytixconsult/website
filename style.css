@@ -525,8 +525,8 @@ body {
     display: inline-block;
     border-right: 2px solid #fff;
     padding-right: 5px;
-    white-space: nowrap;
-    overflow: hidden;
+    white-space: normal; /* Mengizinkan teks wrapping */
+    overflow-wrap: break-word; /* Pecah teks bila terlalu panjang */
 }
 
 /* Responsive Design */
