@@ -304,7 +304,7 @@ body {
 /* Slider Track - This will animate the slide */
 .slider-track {
     display: flex;
-    animation: slideAnimation 15s forwards; /* Animation untuk slider */
+    animation: slideAnimation 12s forwards; /* Animation untuk slider */
 }    
 
 /* Button navigation */
