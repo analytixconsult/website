@@ -305,7 +305,7 @@ body {
 /* Slider Track - This will animate the slide */
 .slider-track {
     display: flex;
-    animation: slideAnimation 15s infinite; /* Animation untuk slider */
+    animation: slideAnimation 16s infinite; /* Animation untuk slider */
 }
 
 .Project-item {
