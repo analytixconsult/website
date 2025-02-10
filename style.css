@@ -300,13 +300,10 @@ body {
   }
 
 .Project-item {
-    display: flex;
-    flex-direction: column; /* Ubah tata letak menjadi vertikal */
-    align-items: center; /* Pastikan konten di tengah */
-    gap: 20px;
-    background: #fff;
-    padding: 20px;
-    transition: background 0.3s, transform 0.3s;
+    min-width: 100%; /* Membuat setiap item selebar viewport */
+    scroll-snap-align: start;
+    background-color: lightblue;
+    padding: 40px;
 }
 
 .Project-item:nth-child(even) {
