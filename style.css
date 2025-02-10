@@ -251,7 +251,7 @@ body {
 
 /* Slider Responsive */
 .slider-container {
-    overflow-x: scroll; /* Add horizontal scrolling for small screens */
+    overflow-x: auto; /* Add horizontal scrolling for small screens */
     -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
 }
 
@@ -299,14 +299,23 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
-}
-
-/* Slider Track - This will animate the slide */
-.slider-track {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
     display: flex;
-    animation: slideAnimation 16s infinite; /* Animation untuk slider */
-}
+    scroll-behavior: smooth;
+  }
+
+  .slider-track {
+    display: flex;
+  }
+
+  .slider-item {
+    min-width: 100%;
+    scroll-snap-align: start;
+    background-color: lightblue;
+    padding: 40px;
+    text-align: center;
+  }
 
 .Project-item {
     display: flex;
