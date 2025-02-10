@@ -249,11 +249,6 @@ body {
     }
 }
 
-.Project-item {
-    width: 90%; /* Reduce width for mobile */
-    margin: 0 auto; /* Center items */
-}
-
 /* Tambahkan untuk layar kecil */
 @media (max-width: 768px) {
     #typing-text {
@@ -266,7 +261,6 @@ body {
         font-size: 0.9rem; /* Ukuran font lebih kecil lagi untuk perangkat mobile */
     }
 }
-
 
 /* Project Section */
 .Project {
@@ -304,6 +298,16 @@ body {
     padding: 40px;
     text-align: center;
   }
+
+.Project-item {
+    display: flex;
+    flex-direction: column; /* Ubah tata letak menjadi vertikal */
+    align-items: center; /* Pastikan konten di tengah */
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    transition: background 0.3s, transform 0.3s;
+}
 
 .Project-item:nth-child(even) {
     background: #f8f9fc;
