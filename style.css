@@ -249,6 +249,23 @@ body {
     }
 }
 
+/* Slider Responsive */
+.slider-container {
+    overflow-x: auto; /* Add horizontal scrolling for small screens */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on touch devices */
+}
+
+.slider-track {
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+.Project-item {
+    width: 90%; /* Reduce width for mobile */
+    margin: 0 auto; /* Center items */
+}
+
 /* Tambahkan untuk layar kecil */
 @media (max-width: 768px) {
     #typing-text {
@@ -287,7 +304,7 @@ body {
 /* Slider Track - This will animate the slide */
 .slider-track {
     display: flex;
-    animation: slideAnimation 12s infinite; /* Animation untuk slider */
+    animation: slideAnimation 12s 3; /* Animation untuk slider */
 }    
 
 .Project-item {
