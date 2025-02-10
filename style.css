@@ -276,29 +276,27 @@ body {
 }
 
 /* Slider Container */
-.slider-container {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    display: flex;
-    padding: 20px;
-    gap: 16px;
-    background-color: #f9f9f9;
-  }
+..slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: scroll;
+}
 
-  .slider-track {
+/* Slider Track - This will animate the slide */
+.slider-track {
     display: flex;
-    gap: 15px;
-    flex-wrap: nowrap;
 }
 
 .Project-item {
-    width: 90%; /* Reduce width for mobile */
-    margin: 0 auto; /* Center items */
-}
-
-.Project-item:nth-child(even) {
-    background: #f8f9fc;
+    display: flex;
+    flex-direction: column; /* Ubah tata letak menjadi vertikal */
+    align-items: center; /* Pastikan konten di tengah */
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .Project-item:hover {
