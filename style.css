@@ -288,7 +288,9 @@ body {
 
   .slider-track {
     display: flex;
-  }
+    gap: 15px;
+    flex-wrap: nowrap;
+}
 
 .Project-item {
     width: 90%; /* Reduce width for mobile */
