@@ -182,8 +182,7 @@
     <script src="slider.js"></script>
     <script>
         // Typing effect
-        const text = "“Some people don't like change, but you need to embrace change if the alternative is disaster” -Elon Musk”";
-        const text = "-Elon Musk";
+        const text = "“I think there are too many smart people pursuing internet stuff, finance, and law. That is part of the reason why we haven't seen as much innovation.” -Elon Musk";
         let index = 0;
         const typingTextElement = document.getElementById("typing-text");
 
@@ -191,7 +190,7 @@
             if (index < text.length) {
                 typingTextElement.innerHTML += text.charAt(index);
                 index++;
-                setTimeout(typeText, 150); // Adjust speed here (in milliseconds)
+                setTimeout(typeText, 100); // Adjust speed here (in milliseconds)
             }
         }
 
